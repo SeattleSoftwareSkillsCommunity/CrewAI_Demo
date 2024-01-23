@@ -1,11 +1,12 @@
 import os
 from crewai import Agent, Task, Process, Crew
 
+
 # To Load GPT-4
 api = os.environ.get("OPEN_AI_Key")
 
 marketer = Agent(
-    ole="Market Research Analyst",
+    role="Market Research Analyst",
     goal="Find out how big is the demand for my products and suggest how to reach the widest possible customer base",
     backstory = """You are an expert at understanding the market demand, target audience, and competition.  This is 
     crucial for validating whether an idea fulfills a market need and has the potential to attract a wide audience.  
